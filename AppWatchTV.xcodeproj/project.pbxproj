@@ -14,6 +14,12 @@
 		64DC61521BA057900022E52F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64DC61511BA057900022E52F /* Images.xcassets */; };
 		64DC61551BA057900022E52F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64DC61531BA057900022E52F /* LaunchScreen.xib */; };
 		64DC61611BA057900022E52F /* AppWatchTVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DC61601BA057900022E52F /* AppWatchTVTests.m */; };
+		64DC61741BA0579D0022E52F /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DC61731BA0579D0022E52F /* InterfaceController.m */; };
+		64DC61761BA0579D0022E52F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64DC61751BA0579D0022E52F /* Images.xcassets */; };
+		64DC617A1BA0579D0022E52F /* AppWatchTV WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 64DC61791BA0579D0022E52F /* AppWatchTV WatchKit App.app */; };
+		64DC61821BA0579D0022E52F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DC61801BA0579D0022E52F /* Interface.storyboard */; };
+		64DC61841BA0579D0022E52F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64DC61831BA0579D0022E52F /* Images.xcassets */; };
+		64DC61871BA0579D0022E52F /* AppWatchTV WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 64DC616E1BA0579D0022E52F /* AppWatchTV WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +30,35 @@
 			remoteGlobalIDString = 64DC61401BA057900022E52F;
 			remoteInfo = AppWatchTV;
 		};
+		64DC617B1BA0579D0022E52F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64DC61391BA057900022E52F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64DC61781BA0579D0022E52F;
+			remoteInfo = "AppWatchTV WatchKit App";
+		};
+		64DC61851BA0579D0022E52F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64DC61391BA057900022E52F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64DC616D1BA0579D0022E52F;
+			remoteInfo = "AppWatchTV WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64DC618E1BA0579D0022E52F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				64DC61871BA0579D0022E52F /* AppWatchTV WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		64DC61411BA057900022E52F /* AppWatchTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWatchTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +74,15 @@
 		64DC615A1BA057900022E52F /* AppWatchTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWatchTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DC615F1BA057900022E52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64DC61601BA057900022E52F /* AppWatchTVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppWatchTVTests.m; sourceTree = "<group>"; };
+		64DC616E1BA0579D0022E52F /* AppWatchTV WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AppWatchTV WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DC61711BA0579D0022E52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DC61721BA0579D0022E52F /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		64DC61731BA0579D0022E52F /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		64DC61751BA0579D0022E52F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		64DC61791BA0579D0022E52F /* AppWatchTV WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppWatchTV WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DC617F1BA0579D0022E52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DC61811BA0579D0022E52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		64DC61831BA0579D0022E52F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64DC616B1BA0579D0022E52F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +115,8 @@
 			children = (
 				64DC61431BA057900022E52F /* AppWatchTV */,
 				64DC615D1BA057900022E52F /* AppWatchTVTests */,
+				64DC616F1BA0579D0022E52F /* AppWatchTV WatchKit Extension */,
+				64DC617D1BA0579D0022E52F /* AppWatchTV WatchKit App */,
 				64DC61421BA057900022E52F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +126,8 @@
 			children = (
 				64DC61411BA057900022E52F /* AppWatchTV.app */,
 				64DC615A1BA057900022E52F /* AppWatchTVTests.xctest */,
+				64DC616E1BA0579D0022E52F /* AppWatchTV WatchKit Extension.appex */,
+				64DC61791BA0579D0022E52F /* AppWatchTV WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +173,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		64DC616F1BA0579D0022E52F /* AppWatchTV WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				64DC61721BA0579D0022E52F /* InterfaceController.h */,
+				64DC61731BA0579D0022E52F /* InterfaceController.m */,
+				64DC61751BA0579D0022E52F /* Images.xcassets */,
+				64DC61701BA0579D0022E52F /* Supporting Files */,
+			);
+			path = "AppWatchTV WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		64DC61701BA0579D0022E52F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64DC61711BA0579D0022E52F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64DC617D1BA0579D0022E52F /* AppWatchTV WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				64DC61801BA0579D0022E52F /* Interface.storyboard */,
+				64DC61831BA0579D0022E52F /* Images.xcassets */,
+				64DC617E1BA0579D0022E52F /* Supporting Files */,
+			);
+			path = "AppWatchTV WatchKit App";
+			sourceTree = "<group>";
+		};
+		64DC617E1BA0579D0022E52F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64DC617F1BA0579D0022E52F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +220,12 @@
 				64DC613D1BA057900022E52F /* Sources */,
 				64DC613E1BA057900022E52F /* Frameworks */,
 				64DC613F1BA057900022E52F /* Resources */,
+				64DC618E1BA0579D0022E52F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				64DC61861BA0579D0022E52F /* PBXTargetDependency */,
 			);
 			name = AppWatchTV;
 			productName = AppWatchTV;
@@ -157,6 +250,39 @@
 			productReference = 64DC615A1BA057900022E52F /* AppWatchTVTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		64DC616D1BA0579D0022E52F /* AppWatchTV WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64DC618B1BA0579D0022E52F /* Build configuration list for PBXNativeTarget "AppWatchTV WatchKit Extension" */;
+			buildPhases = (
+				64DC616A1BA0579D0022E52F /* Sources */,
+				64DC616B1BA0579D0022E52F /* Frameworks */,
+				64DC616C1BA0579D0022E52F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64DC617C1BA0579D0022E52F /* PBXTargetDependency */,
+			);
+			name = "AppWatchTV WatchKit Extension";
+			productName = "AppWatchTV WatchKit Extension";
+			productReference = 64DC616E1BA0579D0022E52F /* AppWatchTV WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		64DC61781BA0579D0022E52F /* AppWatchTV WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64DC61881BA0579D0022E52F /* Build configuration list for PBXNativeTarget "AppWatchTV WatchKit App" */;
+			buildPhases = (
+				64DC61771BA0579D0022E52F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppWatchTV WatchKit App";
+			productName = "AppWatchTV WatchKit App";
+			productReference = 64DC61791BA0579D0022E52F /* AppWatchTV WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +298,12 @@
 					64DC61591BA057900022E52F = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 64DC61401BA057900022E52F;
+					};
+					64DC616D1BA0579D0022E52F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					64DC61781BA0579D0022E52F = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -190,6 +322,8 @@
 			targets = (
 				64DC61401BA057900022E52F /* AppWatchTV */,
 				64DC61591BA057900022E52F /* AppWatchTVTests */,
+				64DC616D1BA0579D0022E52F /* AppWatchTV WatchKit Extension */,
+				64DC61781BA0579D0022E52F /* AppWatchTV WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +343,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DC616C1BA0579D0022E52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DC617A1BA0579D0022E52F /* AppWatchTV WatchKit App.app in Resources */,
+				64DC61761BA0579D0022E52F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DC61771BA0579D0022E52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DC61821BA0579D0022E52F /* Interface.storyboard in Resources */,
+				64DC61841BA0579D0022E52F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +385,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64DC616A1BA0579D0022E52F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DC61741BA0579D0022E52F /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +400,16 @@
 			isa = PBXTargetDependency;
 			target = 64DC61401BA057900022E52F /* AppWatchTV */;
 			targetProxy = 64DC615B1BA057900022E52F /* PBXContainerItemProxy */;
+		};
+		64DC617C1BA0579D0022E52F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64DC61781BA0579D0022E52F /* AppWatchTV WatchKit App */;
+			targetProxy = 64DC617B1BA0579D0022E52F /* PBXContainerItemProxy */;
+		};
+		64DC61861BA0579D0022E52F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64DC616D1BA0579D0022E52F /* AppWatchTV WatchKit Extension */;
+			targetProxy = 64DC61851BA0579D0022E52F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +428,14 @@
 				64DC61541BA057900022E52F /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		64DC61801BA0579D0022E52F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64DC61811BA0579D0022E52F /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,6 +577,62 @@
 			};
 			name = Release;
 		};
+		64DC61891BA0579D0022E52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = AppWatchTV_WatchKit_Extension;
+				INFOPLIST_FILE = "AppWatchTV WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		64DC618A1BA0579D0022E52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = AppWatchTV_WatchKit_Extension;
+				INFOPLIST_FILE = "AppWatchTV WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		64DC618C1BA0579D0022E52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AppWatchTV WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		64DC618D1BA0579D0022E52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AppWatchTV WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,6 +658,22 @@
 			buildConfigurations = (
 				64DC61681BA057900022E52F /* Debug */,
 				64DC61691BA057900022E52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		64DC61881BA0579D0022E52F /* Build configuration list for PBXNativeTarget "AppWatchTV WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DC61891BA0579D0022E52F /* Debug */,
+				64DC618A1BA0579D0022E52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		64DC618B1BA0579D0022E52F /* Build configuration list for PBXNativeTarget "AppWatchTV WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DC618C1BA0579D0022E52F /* Debug */,
+				64DC618D1BA0579D0022E52F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

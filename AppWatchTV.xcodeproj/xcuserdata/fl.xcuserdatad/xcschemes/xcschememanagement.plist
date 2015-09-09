@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AppWatchTV WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>AppWatchTV.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>64DC61401BA057900022E52F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64DC61591BA057900022E52F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64DC61781BA0579D0022E52F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
