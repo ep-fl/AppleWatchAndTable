@@ -8,11 +8,9 @@
 
 #import "InterfaceController.h"
 
-
 @interface InterfaceController()
 
 @end
-
 
 @implementation InterfaceController
 
@@ -34,5 +32,43 @@
 
 @end
 
+NSString *const cellIdentifier = @"cell";
 
+@interface WKRow : NSObject
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *rowTitle;
+@end
 
+@implementation WKRow
+
+@end
+
+@interface SecondInterfaceController : WKInterfaceController
+@property(nonatomic, weak) IBOutlet WKInterfaceTable *tableView;
+@property(nonatomic, strong) NSArray *sourseArray;
+@end
+
+@implementation SecondInterfaceController
+
+-(instancetype)init {
+    if (self = [super init]) {
+        [self loadTableViewData];
+    } return self;
+}
+
+-(void)loadTableViewData {
+    if (self.tableView != nil) {
+        [self.tableView setNumberOfRows:self.sourseArray.count withRowType:cellIdentifier];
+        for (NSInteger i = 0; i < self.sourseArray.count; i++) {
+            WKRow *row = [self.tableView rowControllerAtIndex:i];
+            [row.rowTitle setText:self.sourseArray[i]];
+        }
+    }
+}
+
+-(NSArray *)sourseArray {
+    if (_sourseArray == nil) {
+        _sourseArray = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", ];
+    } return _sourseArray;
+}
+
+@end

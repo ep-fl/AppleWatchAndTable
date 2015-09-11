@@ -23,21 +23,39 @@
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="299" y="374"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Second Interface Controller-->
         <scene sceneID="yps-cj-UiK">
             <objects>
-                <controller id="H3G-I4-7E9">
+                <controller id="H3G-I4-7E9" customClass="SecondInterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Название пункта" id="Wtt-7P-G0H">
-                            <connections>
-                                <segue destination="dHr-AU-LXe" kind="push" id="R48-4u-DJk"/>
-                            </connections>
-                        </button>
+                        <table alignment="left" id="4Dx-ZE-p2y">
+                            <items>
+                                <tableRow identifier="cell" id="UvE-He-p9q" customClass="WKRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="Y7p-dn-0t9">
+                                        <items>
+                                            <label alignment="left" id="CHP-Hh-thJ">
+                                                <fontDescription key="font" type="italicSystem" pointSize="15"/>
+                                            </label>
+                                        </items>
+                                        <connections>
+                                            <segue destination="dHr-AU-LXe" kind="push" id="8vh-WN-EFO"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowTitle" destination="CHP-Hh-thJ" id="zX2-b8-Y5t"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
+                    <connections>
+                        <outlet property="tableView" destination="4Dx-ZE-p2y" id="vRj-rk-X1w"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="518" y="389"/>
+            <point key="canvasLocation" x="484" y="374"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="zPM-l5-AKm">
@@ -51,7 +69,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="711" y="389"/>
+            <point key="canvasLocation" x="669" y="374"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="XWV-wB-Hs7">
@@ -65,7 +83,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="527" y="709"/>
+            <point key="canvasLocation" x="526" y="690"/>
         </scene>
     </scenes>
 </document>
